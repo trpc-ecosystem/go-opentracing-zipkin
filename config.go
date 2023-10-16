@@ -24,6 +24,7 @@ import (
 	"github.com/openzipkin/zipkin-go/reporter"
 	"github.com/openzipkin/zipkin-go/reporter/http"
 	"github.com/openzipkin/zipkin-go/reporter/kafka"
+	trpc "trpc.group/trpc-go/trpc-go"
 )
 
 // Zipkin plugin constants.

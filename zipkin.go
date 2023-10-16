@@ -22,6 +22,7 @@ import (
 	"github.com/opentracing/opentracing-go/ext"
 	traceLog "github.com/opentracing/opentracing-go/log"
 	zipkin "github.com/openzipkin-contrib/zipkin-go-opentracing"
+	trpc "trpc.group/trpc-go/trpc-go"
 	"trpc.group/trpc-go/trpc-go/codec"
 	"trpc.group/trpc-go/trpc-go/filter"
 	trpcHTTP "trpc.group/trpc-go/trpc-go/http"
