@@ -21,6 +21,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v3"
+	trpc "trpc.group/trpc-go/trpc-go"
 	trpcHTTP "trpc.group/trpc-go/trpc-go/http"
 )
 
