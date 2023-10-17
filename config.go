@@ -19,7 +19,7 @@ import (
 
 	"github.com/Shopify/sarama"
 	"github.com/opentracing/opentracing-go"
-	zipkinOT "github.com/openzipkin-contrib/zipkin-go-opentracing"
+	zipkinOpentracing "github.com/openzipkin-contrib/zipkin-go-opentracing"
 	"github.com/openzipkin/zipkin-go"
 	"github.com/openzipkin/zipkin-go/reporter"
 	"github.com/openzipkin/zipkin-go/reporter/http"
@@ -56,7 +56,7 @@ func (c *Config) NewOpenTracingTracer() (opentracing.Tracer, error) {
 		return nil, err
 	}
 
-	return zipkinOT.Wrap(zipkinTracer), nil
+	return zipkinOpentracing.Wrap(zipkinTracer), nil
 }
 
 // NewZipkinTracer news a zipkin tracer
@@ -190,7 +190,7 @@ type ReporterConfig struct {
 	Kafka *KafkaReporterConfig `yaml:"kafka"`
 }
 
-func (c *ReporterConfig) reporterConfig() reporterConfiger {
+func (c *ReporterConfig) reporterConfig() reporterNewer {
 	switch c.Type {
 	case HTTPReporter:
 		return c.HTTP
@@ -203,7 +203,7 @@ func (c *ReporterConfig) reporterConfig() reporterConfiger {
 	}
 }
 
-type reporterConfiger interface {
+type reporterNewer interface {
 	newReporter() (reporter.Reporter, error)
 }
 
