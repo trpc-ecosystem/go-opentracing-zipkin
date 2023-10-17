@@ -126,12 +126,12 @@ func ServerFilter(z *zipkinPlugin) filter.ServerFilter {
 		ctxValueHeader := ctx.Value(trpcHTTP.ContextKeyHeader)
 		httpHeader, ok := ctxValueHeader.(*trpcHTTP.Header)
 		if ok {
-			// for http protocal
+			// for http protocol
 			log.Debugf("headers: %+v", httpHeader.Request.Header)
 			headerCarrier := opentracing.HTTPHeadersCarrier(httpHeader.Request.Header)
 			parentSpanContext, err = tracer.Extract(opentracing.HTTPHeaders, headerCarrier)
 		} else {
-			// for trpc protocal
+			// for trpc protocol
 			md := msg.ServerMetaData()
 			log.Debugf("metadata: %+v ", md)
 			textMapCarrier := metadataTextMap(md)
