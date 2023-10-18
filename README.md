@@ -1,11 +1,10 @@
 # tRPC zipkin plugin
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/trpc-ecosystem/go-opentracing-zipkin.svg)](https://pkg.go.dev/github.com/trpc-ecosystem/go-opentracing-zipkin)
-[![Go Report Card](https://goreportcard.com/badge/github.com/trpc.group/trpc-go/trpc-opentracing-zipkin)](https://goreportcard.com/report/github.com/trpc.group/trpc-go/trpc-opentracing-zipkin)
-[![LICENSE](https://img.shields.io/github/license/trpc-ecosystem/go-opentracing-zipkin.svg?style=flat-square)](https://github.com/trpc-ecosystem/go-opentracing-zipkin/blob/main/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-opentracing-zipkin)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-opentracing-zipkin)
+[![LICENSE](https://img.shields.io/badge/license-Apache--2.0-green.svg)](https://github.com/trpc-ecosystem/go-opentracing-zipkin/blob/main/LICENSE)
 [![Releases](https://img.shields.io/github/release/trpc-ecosystem/go-opentracing-zipkin.svg?style=flat-square)](https://github.com/trpc-ecosystem/go-opentracing-zipkin/releases)
-[![Docs](https://img.shields.io/badge/docs-latest-green)](http://test.trpc.group.woa.com/docs/)
-[![Tests](https://github.com/trpc-ecosystem/go-opentracing-zipkin/actions/workflows/prc.yaml/badge.svg)](https://github.com/trpc-ecosystem/go-opentracing-zipkin/actions/workflows/prc.yaml)
+[![Tests](https://github.com/trpc-ecosystem/go-opentracing-zipkin/actions/workflows/prc.yml/badge.svg)](https://github.com/trpc-ecosystem/go-opentracing-zipkin/actions/workflows/prc.yml)
 [![Coverage](https://codecov.io/gh/trpc-ecosystem/go-opentracing-zipkin/branch/main/graph/badge.svg)](https://app.codecov.io/gh/trpc-ecosystem/go-opentracing-zipkin/tree/main)
 
 ## Configuration example:
