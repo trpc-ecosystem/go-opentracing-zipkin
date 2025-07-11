@@ -26,3 +26,7 @@ plugins:
 - The plugin contains a global tracer, and each service has a corresponding tracer.
 - The above example is the configuration of the global tracer; The reporting endpoint corresponds to (service_name, host_port). If these two items are not configured, (server.server, global.local_ip) will be used by default.
 - For the tracer of each service, its reporting endpoint uses the (Name, ip:port) configured by the service by default.
+
+## Copyright
+
+The copyright notice pertaining to the Tencent code in this repo was previously in the name of “THL A29 Limited.”  That entity has now been de-registered.  You should treat all previously distributed copies of the code as if the copyright notice was in the name of “Tencent.”
